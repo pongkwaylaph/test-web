@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTIX SHOP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Your CSS styles here */
+        .hover-image {
+            transition: transform 0.5s ease;
+        }
+
+        .hover-image:hover {
+             transform: scale(1.1); /* Adjust the scale as per your preference */
+       }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            color: #ffffff;
+            background-color: #000000;
+        }
+
+        canvas {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .price {
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+
+        .promotion {
+            background-color: #000000;
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: neonGlowBorder 1.5s infinite alternate, slideIn 1s ease-in-out;
+        }
+
+        @keyframes neonGlowBorder {
+            from {
+                border-color: #43F2FF;
+                box-shadow: 0 0 10px rgba(67, 242, 255, 0.5);
+            }
+
+            to {
+                border-color: #00FFFF;
+                box-shadow: 0 0 20px #43F2FF, 0 0 30px #43F2FF, 0 0 40px #43F2FF, 0 0 70px #43F2FF;
+            }
+        }
+
+        h1,
+        h2 {
+            color: white;
+            text-shadow: 0 0 10px #43F2FF;
+            font-size: 20px;
+            margin-top: 20px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4A14FC;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: 2px solid #4A14FC;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: transparent;
+            border-color: #4A14FC;
+            color: #4A14FC;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #000000;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 500px;
+            font-size: 14px;
+            text-align: left;
+            animation: fadeIn 1s ease-in-out;
+            height: 550px;
+            overflow-y: auto;
+        }
+
+        .contact-info {
+            margin-top: 0px;
+        }
+
+        .contact-info a {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: #4A14FC;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 1px;
+        }
+
+        .contact-info a:hover {
+            background-color: #0056b3;
+        }
+
+        .telegram-logo {
+            width: 20px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="canvas"></canvas>
+
+<h1>ARTIX KRIEGER CHEATS</h1>
+<h1>8 BALL POOL EDITION</h1>
+<div class="promotion">
+    <h2>Limited 8 BALL POOL Cheats</h2>
+    <p>For a limited time only, avail our 8BP cheats at a discounted price. Get yours now!</p>
+    <a href="#" class="cta-button" onclick="showPopup('popup1')">Shop Now</a>
+</div>
+<div class="popup" id="popup1" style="text-align: center;">
+    <h2>GOLD EDITION</h2>
+    <div>
+        <div style="display: inline-block;">
+            <img src="https://cdn.discordapp.com/attachments/1211222298061832263/1216012934006968400/TsT8Aif.png?ex=65fed74b&is=65ec624b&hm=62387c679459e3f00fc334b2695012e3aa6bf24daa3ce9d53fd9ee093099834c&" alt="Your Image" style="width: 150px; height: auto; margin-right: 10px; border-radius: 32px;" class="hover-image">
+            <p class="price">₱150/$4</p>
+        </div>
+        <div style="display: inline-block;">
+            <img src="" alt="Your Image" style="width: 150px; height: auto; margin-right: 10px; border-radius: 32px;" class="hover-image">
+            <p class="price">₱250/$6</p>
+        </div>
+        <div style="display: inline-block;">
+            <img src="" alt="Your Image" style="width: 150px; height: auto; margin-right: 10px; border-radius: 32px;" class="hover-image">
+            <p class="price">₱350/$8</p>
+        </div>
+        <div style="display: inline-block;">
+            <img src="" alt="Your Image" style="width: 150px; height: auto; margin-right: 10px; border-radius: 32px;" class="hover-image">
+            <p class="price">₱450/$10</p>
+        </div>
+        <div style="display: inline-block;">
+            <img src="" alt="Your Image" style="width: 150px; height: auto; margin-right: 10px; border-radius: 32px;" class="hover-image">
+            <p class="price">₱550/$12</p>
+        </div>
+        <div style="display: inline-block;">
+            <img src="" alt="Your Image" style="width: 150px; height: auto; margin-right: 10px; border-radius: 32px;" class="hover-image">
+            <p class="price">₱700/$14</p>
+        </div>
+    </div>
+    <a href="#" class="cta-button" style="position: absolute; bottom: 20px; right: 20px;"
+       onclick="hidePopup('popup1')">Back</a>
+</div>
+
+
+<!-- More content here -->
+
+<script>
+    function showPopup(popupId) {
+        var popup = document.getElementById(popupId);
+        popup.style.display = "block";
+        popup.style.animation = 'fadeIn 1s';
+    }
+
+    function hidePopup(popupId) {
+        var popup = document.getElementById(popupId);
+        popup.style.animation = 'fadeOut 1s';
+        setTimeout(() => {
+            popup.style.display = "none";
+            popup.style.animation = '';
+        }, 1000);
+    }
+
+    var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+
+        // Set up canvas
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+
+        // Set canvas dimensions
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        // Particle constructor
+        function Particle(x, y, radius, color, velocity) {
+            this.x = x;
+            this.y = y;
+            this.radius = radius;
+            this.color = color;
+            this.velocity = velocity;
+
+            // Draw particle
+            this.draw = function() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+                ctx.closePath();
+            }
+
+            // Update particle position
+            this.update = function() {
+                this.draw();
+                this.x += this.velocity.x;
+                this.y += this.velocity.y;
+
+                // Wrap particles around the screen edges
+                if (this.x - this.radius > canvas.width) {
+                    this.x = -this.radius;
+                } else if (this.x + this.radius < 0) {
+                    this.x = canvas.width + this.radius;
+                }
+
+                if (this.y - this.radius > canvas.height) {
+                    this.y = -this.radius;
+                } else if (this.y + this.radius < 0) {
+                    this.y = canvas.height + this.radius;
+                }
+            }
+        }
+
+        // Create particles
+        var particles = [];
+        for (var i = 0; i < 100; i++) {
+            var radius = Math.random() * 3 + 1;
+            var x = Math.random() * canvas.width;
+            var y = Math.random() * canvas.height;
+            var color = 'white';
+            var velocity = {
+                x: (Math.random() - 0.5) * 2, // Random velocity between -2 and 2
+                y: (Math.random() - 0.5) * 2
+            };
+            particles.push(new Particle(x, y, radius, color, velocity));
+        }
+
+        // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(function(particle) {
+                particle.update();
+            });
+        }
+
+        animate();
+
+        // Adjust canvas dimensions on window resize
+        window.addEventListener('resize', function() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>
